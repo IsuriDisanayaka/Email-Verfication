@@ -12,8 +12,10 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-   private String email;
-    @Column(nullable = false,unique = true,length = 45)
+
+    @Column(nullable = false,unique = true,length = 3000)
+    private String email;
+    @Column(nullable = false,unique = true,length = 3000)
     private String password;
 
     @Column(name="frist_name",nullable = false,length = 20)
